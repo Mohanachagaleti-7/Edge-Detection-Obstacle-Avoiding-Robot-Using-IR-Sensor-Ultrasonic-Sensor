@@ -13,8 +13,11 @@ The Edge Detection & Obstacle Avoiding Robot is an autonomous robotic system des
 The robot is capable of:
 
 . Detecting edges and preventing falls
+
 . Detecting obstacles and avoiding collisions
+
 . Moving automatically without human control
+
 . Sending real-time sensor data to the cloud using Iot.
 # Objectives
 . To develop an autonomous robot using Arduino UNO
@@ -112,58 +115,89 @@ Avoids collision
 This graph helps analyze obstacle detection performance in real-time.
 # Complete System Workflow
 Step 1: Sensor Data Collection
-IR sensor checks edges
-Ultrasonic sensor measures distance
+
+. IR sensor checks edges
+
+. Ultrasonic sensor measures distance
 
 Step 2: Arduino Processing
-Arduino reads sensor inputs
-Processes conditions using programmed logic
+
+. Arduino reads sensor inputs
+
+. Processes conditions using programmed logic
 
 Step 3: Motor Control
-L293D driver controls motor movement
-Robot moves safely based on sensor data
+
+. L293D driver controls motor movement
+
+. Robot moves safely based on sensor data
 
 Step 4: IoT Communication
-ESP8266 sends sensor data to ThingSpeak cloud
+
+. ESP8266 sends sensor data to ThingSpeak cloud
 
 Step 5: Real-Time Monitoring
-ThingSpeak displays graphs
-Users monitor robot performance remotely
+
+. ThingSpeak displays graphs
+
+. Users monitor robot performance remotely
 # Circuit Connections
 
-🔴 Ultrasonic Sensor (HC-SR04)
-VCC → 5V
-GND → GND
-TRIG → D3
-ECHO → D4
+🔴 Ultrasonic Sensor (HC-SR04):
 
-⚫ IR Sensor
-VCC → 5V
-GND → GND
-OUT → D9
+. VCC → 5V
 
-🟩 L293D Motor Driver
-IN1 → D5
-IN2 → D6
-IN3 → D7
-IN4 → D8
-VCC → 5V
-GND → GND
-12V Input → Battery
+. GND → GND
 
- DC Motors
-Motor 1 → OUT1 & OUT2
-Motor 2 → OUT3 & OUT4
+. TRIG → D3
 
- ESP8266 Wi-Fi Module
-VCC → 3.3V
-GND → GND
-TX → RX of Arduino
-RX → TX of Arduino
+. ECHO → D4
 
-🔋 Battery
-Positive → Motor Driver 12V Input
-Negative → GND.
+⚫ IR Sensor:
+
+. VCC → 5V
+
+. GND → GND
+
+. OUT → D9
+
+🟩 L293D Motor Driver:
+
+. IN1 → D5
+
+. IN2 → D6
+
+. IN3 → D7
+
+. IN4 → D8
+
+. VCC → 5V
+
+. GND → GND
+
+. 12V Input → Battery
+
+ DC Motors:
+ 
+. Motor 1 → OUT1 & OUT2
+
+. Motor 2 → OUT3 & OUT4
+
+ ESP8266 Wi-Fi Module:
+ 
+. VCC → 3.3V
+
+. GND → GND
+
+. TX → RX of Arduino
+
+. RX → TX of Arduino
+
+🔋 Battery:
+
+. Positive → Motor Driver 12V Input
+
+. Negative → GND.
 # Advantages
 
 . Prevents robot from falling
