@@ -98,9 +98,13 @@ The Arduino UNO processes the sensor data and controls the DC motors through the
 
 Thus, the robot can move automatically, avoid obstacles, prevent falling, and provide IoT-based monitoring.
 # ☁️ ThingSpeak Cloud Monitoring
+
 ThingSpeak is an IoT cloud platform used to:
+
 . Store sensor data
+
 . Generate real-time graphs
+
 . Monitor robot performance remotely
 
 The ESP8266 continuously uploads sensor readings to the cloud.
@@ -110,29 +114,38 @@ The ESP8266 continuously uploads sensor readings to the cloud.
 This graph displays the IR sensor values used for edge detection.
 
 Graph Interpretation:
-Value changes when edge is detected
-Helps monitor edge detection activity
-Indicates safe or unsafe surface conditions
+
+. Value changes when edge is detected
+
+. Helps monitor edge detection activity
+
+. Indicates safe or unsafe surface conditions
 
 When the robot reaches an edge:
 
-Sensor value changes
-Arduino stops the robot
-Robot changes direction automatically
+. Sensor value changes
+
+. Arduino stops the robot
+
+. Robot changes direction automatically
 
 📉 Field 2 – Ultrasonic Distance Graph
 
 This graph shows the distance measured by the ultrasonic sensor.
 
 Graph Interpretation:
-High value → Object is far away
-Low value → Object is near
+
+. High value → Object is far away
+
+. Low value → Object is near
 
 When an obstacle comes close:
 
-Robot stops
-Changes path
-Avoids collision
+. Robot stops
+
+. Changes path
+
+. Avoids collision
 
 This graph helps analyze obstacle detection performance in real-time.
 # Complete System Workflow
