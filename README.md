@@ -20,12 +20,19 @@ The robot is capable of:
 
 . Sending real-time sensor data to the cloud using Iot.
 # Objectives
+
 . To develop an autonomous robot using Arduino UNO
+
 . To detect obstacles using an ultrasonic sensor
+
 . To detect edges using IR sensors
+
 . To avoid collisions and falling from edges
+
 . To control DC motors using an L293D motor driver
+
 . To send sensor data to the cloud using ESP8266
+
 . To implement real-time monitoring using ThingSpeak
 # Features
 
@@ -48,21 +55,36 @@ The robot is capable of:
 . Real-time graphical data visualization
 # Components
 ## 🛠️ Hardware Components:
+
 1.Arduino UNO
+
 2.Ultrasonic Sensor (HC-SR04)
+
 3.IR Sensor
+
 4.L293D Motor Driver
+
 5.DC Geared Motors
+
 6.Robot Wheels
+
 7.ESP8266 Wi-Fi Module
+
 8.12V Rechargeable Battery
+
 9.Robot Chassis
+
 10.Jumper Wires
+
 11.Power Supply Module
 ## 💻 Software Components:
+
 1.Arduino IDE
+
 2.Embedded C Programming
+
 3.ThingSpeak Cloud Platform
+
 4.Tinkercad Simulation Software
 # Working Principle
 
